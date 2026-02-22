@@ -1,25 +1,68 @@
-export default function AnalyticsPage() {
+"use client";
+
+export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-[#111118] text-white p-8">
-      <h1 className="text-3xl font-bold text-purple-400 mb-6">
-        تحليل أداء المتجر
-      </h1>
+    <div
+      style={{
+        background: "#0F0F1A",
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        fontFamily: "sans-serif",
+      }}
+    >
+      <div
+        style={{
+          background: "#1A1A2E",
+          padding: "40px",
+          borderRadius: "16px",
+          width: "320px",
+          border: "1px solid #6D28D9",
+        }}
+      >
+        <h2 style={{ color: "#8B5CF6", marginBottom: "20px" }}>
+          تسجيل الدخول إلى نكسورا 🚀
+        </h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
-        <div className="bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-          <h2>عدد الزوار</h2>
-          <p className="text-2xl text-purple-400 mt-2">12,540</p>
-        </div>
+        <input
+          placeholder="البريد الإلكتروني"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "15px",
+            borderRadius: "8px",
+            border: "none",
+          }}
+        />
 
-        <div className="bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-          <h2>معدل التحويل</h2>
-          <p className="text-2xl text-purple-400 mt-2">3.2%</p>
-        </div>
+        <input
+          type="password"
+          placeholder="كلمة المرور"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "20px",
+            borderRadius: "8px",
+            border: "none",
+          }}
+        />
 
-        <div className="bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-          <h2>أفضل منتج</h2>
-          <p className="text-purple-400 mt-2">مجموعة الصيف</p>
-        </div>
+        <button
+          style={{
+            width: "100%",
+            background: "#6D28D9",
+            padding: "12px",
+            borderRadius: "10px",
+            border: "none",
+            color: "white",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          تسجيل الدخول
+        </button>
       </div>
     </div>
   );
