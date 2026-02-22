@@ -1,45 +1,26 @@
-export default function AccountingPage() {
+export default function AnalyticsPage() {
   return (
     <div className="min-h-screen bg-[#111118] text-white p-8">
-
-      <h1 className="text-3xl font-bold text-purple-400 mb-8">
-        💰 المحاسب المالي
+      <h1 className="text-3xl font-bold text-purple-400 mb-6">
+        تحليل أداء المتجر
       </h1>
 
       <div className="grid md:grid-cols-3 gap-6">
-
-        {/* الإيرادات */}
         <div className="bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-          <h2 className="text-xl mb-4 text-gray-300">إجمالي الإيرادات</h2>
-          <p className="text-2xl font-bold text-green-400">
-            54,200 ريال
-          </p>
+          <h2>عدد الزوار</h2>
+          <p className="text-2xl text-purple-400 mt-2">12,540</p>
         </div>
 
-        {/* المصروفات */}
         <div className="bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-          <h2 className="text-xl mb-4 text-gray-300">إجمالي المصروفات</h2>
-          <p className="text-2xl font-bold text-red-400">
-            12,800 ريال
-          </p>
+          <h2>معدل التحويل</h2>
+          <p className="text-2xl text-purple-400 mt-2">3.2%</p>
         </div>
 
-        {/* صافي الربح */}
         <div className="bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-          <h2 className="text-xl mb-4 text-gray-300">صافي الربح</h2>
-          <p className="text-2xl font-bold text-purple-400">
-            41,400 ريال
-          </p>
+          <h2>أفضل منتج</h2>
+          <p className="text-purple-400 mt-2">مجموعة الصيف</p>
         </div>
-
       </div>
-
-      <div className="mt-10 bg-[#1a1a25] p-6 rounded-2xl border border-purple-800">
-        <h2 className="text-xl mb-4 text-purple-400">
-          📊 توصية الذكاء الاصطناعي
-        </h2>
-
-        <p className="text-gray-300">
-          يمكنك تقليل المصروفات الإعلانية بنسبة 15% وزيادة التركيز على الحملات ذات معدل تحويل أعلى.
-        </p>
-      </div>
+    </div>
+  );
+}
